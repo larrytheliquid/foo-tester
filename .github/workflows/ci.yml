@@ -15,6 +15,9 @@ jobs:
       - uses: cachix/cachix-action@v14
       - uses: DeterminateSystems/magic-nix-cache-action@main
         with:
+          name: digitallyinduced
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+        with:
           diagnostic-endpoint: "" # Disables telemetry
           upstream-cache: "https://digitallyinduced.cachix.org"
           use-flakehub: false
